@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 kintamieji", "01 kintamieji", "{67C20D11-A440-4B58-B62C-D690F439BB3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 isvedimas", "02 isvedimas", "{1D0079B7-FC72-4D1F-83AC-1D1187E70625}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 aritmetiniai veiksmai", "03 aritmetiniai veiksmai", "{D3D4EF03-3689-4672-84C1-BD4C2C3DA585}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 ivedimas", "04 ivedimas", "{0CB3EB60-8CD9-4454-A65A-C2E75ECC9C42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 -1 uzduotis", "1 -1 uzduotis\1 -1 uzduotis.csproj", "{4F935DDA-8F1D-4CFA-A66F-D87CF5C233C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F935DDA-8F1D-4CFA-A66F-D87CF5C233C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F935DDA-8F1D-4CFA-A66F-D87CF5C233C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F935DDA-8F1D-4CFA-A66F-D87CF5C233C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F935DDA-8F1D-4CFA-A66F-D87CF5C233C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F935DDA-8F1D-4CFA-A66F-D87CF5C233C1} = {67C20D11-A440-4B58-B62C-D690F439BB3E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53182804-5265-44A7-893C-C8BCD3E68976}
+	EndGlobalSection
+EndGlobal
