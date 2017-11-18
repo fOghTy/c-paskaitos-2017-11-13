@@ -20,7 +20,6 @@ namespace _1__1_uzduotis
             var kursas = 1;
             var studiju_programos_pavadinimas = "programavimas";
             var atsiskaitytu_kreditu_skaicius = 69;
-            Console.WriteLine 
         }
     }
 }
