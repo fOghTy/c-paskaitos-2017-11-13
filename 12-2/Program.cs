@@ -10,12 +10,18 @@ namespace _12_2
     {
         static void Main(string[] args)
         {
-            var skaicius = -4;
-
-            while (skaicius < 0)
+            Console.WriteLine("iveskite neigiama skaiciu");
+            var a = Convert.ToInt32(Console.ReadLine());
+            if (a < 0)
             {
-                Console.WriteLine(skaicius); skaicius++;
+                while (a < 0)
+                {
+                    Console.WriteLine(a);
+                    a++;
+
+                }
             }
+            else { Console.WriteLine("skaicius teigiamas"); }
         }
     }
 }

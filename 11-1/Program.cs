@@ -10,10 +10,24 @@ namespace _11_1
     {
         static void Main(string[] args)
         {
-            for (var a = 0; a < 10; a++)
+            for (int i = 1; i < 100; i++)
             {
-                Console.WriteLine(a + "\n");
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                    Console.WriteLine(i + "FizzBuzz");
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine(i + "Fizz");
+                }
+                else if (i % 5 == 0)
+                {
+                    Console.WriteLine(i + "Buzz");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
             }
-        }
     }
 }

@@ -11,14 +11,13 @@ namespace _11_7
         static void Main(string[] args)
         {
             var suma = 0;
-            var a = Convert.ToInt32(Console.ReadLine());
 
-            for (var a = 1; a < 100; a++)
+            for (int i = 1; a < 100; a++)
             {
-                suma += a;
+                suma += i;
             }
 
-            Console.WriteLine("atsakymas: " + suma);
+            Console.WriteLine("suma" + suma);
         }
     }
 }

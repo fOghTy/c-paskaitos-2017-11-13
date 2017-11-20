@@ -10,14 +10,16 @@ namespace _11_8
     {
         static void Main(string[] args)
         {
-            var a = Convert.ToInt32(Console.ReadLine());
-            var lyginiai = Convert.ToInt32(Console.ReadLine());
+            var suma = 0;
 
-            for (var a % 2 == 0)
+            for (int i = 20; i < 50; i++)
             {
-                Console.WriteLine(");
+                if (i % 2 == 0)
+                {
+                    suma += i;
+                }
             }
-
+            Console.WriteLine("suma" + suma);
         }
     }
 }

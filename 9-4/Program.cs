@@ -11,11 +11,12 @@ namespace _9_4
         static void Main(string[] args)
         {
             Console.WriteLine("iveskite pasirinkimo numeri");
-            var vanduo = Convert.ToInt32(Console.ReadLine());
-            var kava = Convert.ToInt32(Console.ReadLine());
-            var arbata = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(" 1 - vanduo");
+            Console.WriteLine(" 2 - kava");
+            Console.WriteLine(" 3 - arbata");
+            var a = Convert.ToInt32(Console.ReadLine());
 
-            switch (vanduo)
+            switch (a)
             {
                 case 1:
                     Console.WriteLine("jus pasirinkote vandeni");

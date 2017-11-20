@@ -10,22 +10,19 @@ namespace _12_3
     {
         static void Main(string[] args)
         {
-            var skaiciuoti = "t";
-
-            while skaiciuoti == "t")
+            var veiksmas = "t";
+            while (veiksmas == "t")
             {
-                Console.WriteLine("Iveskite 2 skaicius");
+                Console.WriteLine("iveskite du skaicius");
                 var a = Convert.ToInt32(Console.ReadLine());
                 var b = Convert.ToInt32(Console.ReadLine());
-
-                Console.WriteLine(a + b);
-                Console.WriteLine(a - b);
-                Console.WriteLine(a * b);
-                Console.WriteLine(a / b);
-
-                Console.WriteLine("ar dar skaiciuoti? t/n");
+                Console.WriteLine("{0}+{1}={2}", a, b, (a + b));
+                Console.WriteLine("{0}-{1}={2}", a, b, (a - b));
+                Console.WriteLine("{0}*{1}={2}", a, b, (a * b));
+                Console.WriteLine("{0}/{1}={2}", a, b, (double)(a / b));
+                Console.WriteLine("Ar norite testi (t/n)");
+                veiksmas = Console.ReadLine();
             }
-            skaiciuoti = Console.ReadLine();
         }
     }
 }

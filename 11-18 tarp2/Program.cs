@@ -4,20 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _11_4
+namespace _11_18_tarp2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            for (var a = 0; a <= 10; a++)
-
+            var suma = 0;
+            var kvsuma = 0;
+            for (int i = 1; i < 101; i++)
             {
-            if (a % 2 == 0)
+                suma += i;
+                kvsuma += (i * i);
 
-            {
-                Console.WriteLine(a);
             }
+            Console.WriteLine(suma * suma - kvsuma);
         }
     }
 }

@@ -30,10 +30,10 @@ namespace _8_2
                 Console.WriteLine(c);
             }
 
-             else
-             {
-                        Console.WriteLine("skaiciai lygus");
-                    }
-                }
+            else
+            {
+                Console.WriteLine("skaiciai lygus");
+            }
+        }
     }
 }

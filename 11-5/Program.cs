@@ -14,9 +14,12 @@ namespace _11_5
             var a = Convert.ToInt32(Console.ReadLine());
             var b = Convert.ToInt32(Console.ReadLine());
 
-            if (a > b || b < a) ;
+            if (a < b)
             {
-                Console.WriteLine("tinka");
+            for (int i=a; i < b; a++)
+                {
+                    Console.WriteLine(a + " " + (a * a ));
+                }
             }
         }
     }

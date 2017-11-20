@@ -16,11 +16,11 @@ namespace _8_3
             var c = Convert.ToInt32(Console.ReadLine());
             var vidurkis = (double)(a + b + c) / 3;
 
-            if (vidurkis <= 8-10)
+            if (vidurkis >= 8 && vidurkis <= 10)
             {
                 Console.WriteLine(vidurkis + "8-10");
             }
-            else if (vidurkis <= 8)
+            else if (vidurkis >= 5 && vidurkis < 8)
             {
                 Console.WriteLine(vidurkis + "5-8");
             }

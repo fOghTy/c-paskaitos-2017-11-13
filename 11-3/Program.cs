@@ -10,7 +10,7 @@ namespace _11_3
     {
         static void Main(string[] args)
         {
-            for (var a = 1; a <= 20; a += 2)
+            for (var a = 1; a <= 20; a += 3)
             {
                 Console.Write( "[" + a + "]" );
             }

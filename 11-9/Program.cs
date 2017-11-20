@@ -10,6 +10,15 @@ namespace _11_9
     {
         static void Main(string[] args)
         {
+            var suma = 0;
+            for (int i = 30; i < 60; i++)
+            {
+            if (i % 2 != 0)
+            }
+                suma += i;
+            {
+            }
+            Console.WriteLine("suma" + suma);
         }
     }
 }
