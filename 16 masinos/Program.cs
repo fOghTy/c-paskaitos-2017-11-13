@@ -31,7 +31,16 @@ namespace _16_masinos
             naujausias.Isvedimas();
 
             var seniausias = programa.SeniausiasAuto(automobiliai);
-            Console.WriteLine("Seniausias );
+            Console.WriteLine("Seniausias auto: ");
+            seniausias.Isvedimas();
+
+            var galingiausias = programa.DidziausiaGalia(automobiliai);
+            Console.WriteLine("Galingiausias auto: ");
+            galingiausias.Isvedimas();
+
+            var maziausiai = programa.MaziausiaiKm(automobiliai);
+            Console.WriteLine("Maziausiai nuvaziuota km: ");
+            maziausiai.Isvedimas();
         }
         public void Isvedimas(List<Automobilis> automobiliai)
         {
@@ -48,7 +57,7 @@ namespace _16_masinos
             foreach (var auto in automobiliai)
             {
 
-                if (auto.Metai < laikinas.Metai)
+                if (auto.Metai > laikinas.Metai)
                 {
                     laikinas = auto;
                 }
@@ -64,13 +73,45 @@ namespace _16_masinos
             foreach (var auto in automobiliai)
             {
 
-                if (auto.Metai > senis.Metai)
+                if (auto.Metai < senis.Metai)
                 {
                     senis = auto;
                 }
 
             }
             return senis;
+        }
+
+        public Automobilis DidziausiaGalia(List<Automobilis> automobiliai)
+        {
+            var galingiausias = automobiliai.Max();
+
+            foreach (var auto in automobiliai)
+            {
+
+                if (auto.Galia > galingiausias.Galia)
+                {
+                    galingiausias = auto;
+                }
+
+
+            }
+            return galingiausias;
+        }
+
+        public Automobilis MaziausiaiKm(List<Automobilis> automobiliai)
+        {
+            var maziausiai = automobiliai.Min();
+
+            foreach (var auto in automobiliai)
+            {
+                if (auto.Rida < maziausiai.Rida)
+                {
+                    maziausiai = auto;
+                }
+
+            }
+            return maziausiai;
         }
     }
 }
