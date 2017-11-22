@@ -54,5 +54,22 @@ namespace _15_papildoma_4
         {
             return primilziai.Average();
         }
+
+        public void dumax(List<double> primilziai)
+        {
+            var max1 = primilziai.Max();
+
+            double max2 = 0;
+            foreach (var pri in primilziai)
+            {
+                if (pri < max1 && pri > max2)
+                {
+                    max2 = pri;
+                }
+
+            }
+            Console.WriteLine("Max1= " + max1);
+            Console.WriteLine("Max2= " + max2);
+        }
     }
 }
