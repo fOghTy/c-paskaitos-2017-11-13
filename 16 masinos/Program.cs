@@ -84,7 +84,7 @@ namespace _16_masinos
 
         public Automobilis DidziausiaGalia(List<Automobilis> automobiliai)
         {
-            var galingiausias = automobiliai.Max();
+            var galingiausias = automobiliai.First();
 
             foreach (var auto in automobiliai)
             {
@@ -101,7 +101,7 @@ namespace _16_masinos
 
         public Automobilis MaziausiaiKm(List<Automobilis> automobiliai)
         {
-            var maziausiai = automobiliai.Min();
+            var maziausiai = automobiliai.First();
 
             foreach (var auto in automobiliai)
             {
