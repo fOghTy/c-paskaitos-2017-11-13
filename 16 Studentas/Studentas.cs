@@ -54,7 +54,7 @@ namespace _16_Studentas
 
         public double Vidurkis()
         {
-            return MatematikosPazymiai.Average() + InformatikosPazymiai.Average() + BiologijosPazymiai.Average()) / 3;
+            return (MatematikosPazymiai.Average() + InformatikosPazymiai.Average() + BiologijosPazymiai.Average()) / 3;
         }
 
         public int DidziausiasPazymys()
@@ -63,7 +63,7 @@ namespace _16_Studentas
             var antras = InformatikosPazymiai.Max();
             var trecias = BiologijosPazymiai.Max();
 
-            if (pirmas > && pirmas > trecias)
+            if (pirmas > antras && pirmas > trecias)
             {
                 return pirmas;
             }

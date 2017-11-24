@@ -74,6 +74,17 @@ namespace _16_Parduotuve
             Console.WriteLine("Skaiciavimai: ");
             Console.WriteLine("Visu prekiu kainu suma: " + KainuSuma());
             Console.WriteLine("Visu prekiu savikainu suma: " + SavikainuSuma());
+            Console.WriteLine("Pajamos: " + Pajamos());
+            Console.WriteLine("Pelnas: " + BendrasPelnas());
+            Console.WriteLine();
+            Console.WriteLine("Maziausias kiekis prekiu: ");
+            MaziausiasKiekis().Isvedimas();
+            Console.WriteLine("Ddiziausias kiekis prekiu: ");
+            DidziausiasKiekis().Isvedimas();
+            Console.WriteLine("Brangiausia preke: ");
+            BrangiausiaPreke().Isvedimas();
+            Console.WriteLine("Pigiausia preke: ");
+            PigiausiaPreke().Isvedimas();
 
             Console.WriteLine("Maziausias kiekis: ");
             MaziausiasKiekis().Isvedimas();
@@ -110,50 +121,50 @@ namespace _16_Parduotuve
         {
             var suma = 0.0;
 
-        foreach (var preke in Prekes)
-        {
-            suma+= preke.Kaina;
-        }
+            foreach (var preke in Prekes)
+            {
+                suma += preke.Kaina;
+            }
 
-        return suma;
-}
+            return suma;
+        }
 
         public double SavikainuSuma()
         {
 
             var suma = 0.0;
 
-        foreach (var preke in Prekes)
+            foreach (var preke in Prekes)
 
-        {
-            suma+= preke.Savikaina;
-        }
-              return suma;
+            {
+                suma += preke.Savikaina;
             }
+            return suma;
+        }
         public double Pajamos()
         {
 
             var pajamos = 0.0;
 
-        foreach (var preke in Prekes)
+            foreach (var preke in Prekes)
 
-        {
-            pajamos= preke.Kaina * preke.Kiekis;
-        }
-              return pajamos;
+            {
+                pajamos = preke.Kaina * preke.Kiekis;
             }
+            return pajamos;
+        }
 
         public double BendrasPelnas()
         {
 
             var suma = 0.0;
 
-        foreach (var preke in Prekes)
+            foreach (var preke in Prekes)
 
-        {
-            suma += preke.PelnasPardavusVisaKieki();
-        }
-              return suma;
+            {
+                suma += preke.PelnasPardavusVisaKieki();
+            }
+            return suma;
         }
 
         public Preke MaziausiasKiekis()
@@ -161,20 +172,54 @@ namespace _16_Parduotuve
 
             var maziausias = Prekes[0];
 
-        foreach (var preke in Prekes)
-        {
-                if(preke.Kiekis < maziausias.Kiekis)
+            foreach (var preke in Prekes)
+            {
+                if (preke.Kiekis < maziausias.Kiekis)
                 {
                     maziausias = preke;
                 }
             }
-              return maziausias;
+            return maziausias;
+
         }
+            public Preke DidziausiasKiekis()
+            {
+
+                var didziausias = Prekes[0];
+
+                foreach (var preke in Prekes)
+                {
+                    if (preke.Kiekis < didziausias.Kiekis)
+                    {
+                        didziausias = preke;
+                    }
+                }
+                return didziausias;
+            }
 
         public Preke PigiausiaPreke()
         {
-            var pigiausia = Prekes.First();
-            foreach (preke in Prekes)
+            var pigiausia = Prekes[0];
+            foreach (var preke in Prekes)
+            {
+                if (preke.Kaina < pigiausia.Kaina)
+                {
+                    pigiausia = preke;
+                }
+            }
+            return pigiausia;
+        }
+                public Preke BrangiausiaPreke()
+                {
+                    var brangiausia = Prekes[0];
+                    foreach (var preke in Prekes)
+                    {
+                        if (preke.Kaina < brangiausia.Kaina)
+                        {
+                            brangiausia = preke;
+                        }
+                    }
+                return brangiausia;
         }
     }
 }
