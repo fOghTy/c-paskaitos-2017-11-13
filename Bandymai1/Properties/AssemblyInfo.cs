@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("looperino")]
+[assembly: AssemblyTitle("Bandymai1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("looperino")]
+[assembly: AssemblyProduct("Bandymai1")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c6564537-76d1-4540-b740-d5dbbc832ac8")]
+[assembly: Guid("8e7b2cfb-add8-45eb-8555-65bf7781ee53")]
 
 // Version information for an assembly consists of the following four values:
 //

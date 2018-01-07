@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C6564537-76D1-4540-B740-D5DBBC832AC8}</ProjectGuid>
+    <ProjectGuid>{8E7B2CFB-ADD8-45EB-8555-65BF7781EE53}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>looperino</RootNamespace>
-    <AssemblyName>looperino</AssemblyName>
+    <RootNamespace>Bandymai1</RootNamespace>
+    <AssemblyName>Bandymai1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
